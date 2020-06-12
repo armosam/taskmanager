@@ -22,3 +22,11 @@ To run dev system on your computer run
     npm run dev
 ```
 
+
+>GIT
+echo "# taskmanager" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:armosam/taskmanager.git
+git push -u origin master
