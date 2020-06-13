@@ -7,7 +7,7 @@
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
     "test": "env-cmd -f ./config/test.env jest --watch --runInBand --detectOpenHandles",
-    "mongo": "sudo mkdir -p ./mongodb/data/db & ./mongodb/bin/mongod --dbpath=./mongodb/data/db",
+    "mongo": "mkdir -p ./mongodb/data/db & ./mongodb/bin/mongod --dbpath=./mongodb/data/db",
     "mongo-win": "mkdir \"mongodb/data/db\" & \"mongodb/bin/mongod\" --dbpath=mongodb/data/db"
   },
   "jest": {
