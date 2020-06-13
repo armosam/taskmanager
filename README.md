@@ -4,31 +4,51 @@ Used node js, express, mongodb, mongoose etc.
 
 >Mongodb Server
 
-Added run script in the npm configuration to run mongoDB
+Install mongodb database server in the folder `mongodb`
 ```
-    npm run mongodb
+    - cd mongodb 
+    - download and extract archive here.
+    - There should be bin folder in the monbodb like mongodb/bin
 ```
 
-- You can also run manually
+>Run MongoDB server
 
-    linux   -> ~/mongodb/bin/mongod --dbpath=~/mongodb-data/
+Run script in the `npm` configuration to run mongoDB
+```
+    For linux
+        npm run mongo
+    For Windows
+        npm run mongo-win
 
-    windows -> c:/users/armen/mongodb/bin/mongod.exe --dbpath=c:/users/armen/mongodb-data
+    - You can also run manually
 
+    Linux   --> mkdir -p ./mongodb/data/db & ./mongodb/bin/mongod --dbpath=./mongodb/data/db
+
+    Windows --> mkdir mongodb/data/db & mongodb/bin/mongod --dbpath=mongodb/data/db
+```
 
 >Dev Environment
-To run dev system on your computer run
+
+To run `developlemnt` environment on your computer run command
 ```
     npm run dev
 ```
 
+>Tests
 
->GIT
+To run test cases run command:
 ```
-    echo "# taskmanager" >> README.md
+    npm run test
+```
+
+>Note In the *config*  folder exported postman environment and project that could be used to test API
+
+>GIT Settings for development
+```
     git init
-    git add README.md
-    git commit -m "first commit"
+    ssh-add <github key>
     git remote add origin git@github.com:armosam/taskmanager.git
+    git fetch
+    git pull origin master
     git push -u origin master
 ```

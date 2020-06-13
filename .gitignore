@@ -109,3 +109,6 @@ playground
 
 # Upload directory
 uploads
+
+#mongo db installed in the project
+mongodb/*

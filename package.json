@@ -7,7 +7,8 @@
     "start": "node src/index.js",
     "dev": "env-cmd -f ./config/dev.env nodemon src/index.js",
     "test": "env-cmd -f ./config/test.env jest --watch --runInBand --detectOpenHandles",
-    "mongodb": "~/mongodb/bin/mongod --dbpath=/home/armen/mongodb-data"
+    "mongo": "sudo mkdir -p ./mongodb/data/db & ./mongodb/bin/mongod --dbpath=./mongodb/data/db",
+    "mongo-win": "mkdir \"mongodb/data/db\" & \"mongodb/bin/mongod\" --dbpath=mongodb/data/db"
   },
   "jest": {
     "testEnvironment": "node"
@@ -31,5 +32,16 @@
     "jest": "^26.0.1",
     "nodemon": "^2.0.4",
     "supertest": "^4.0.2"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/armosam/taskmanager.git"
+  },
+  "bugs": {
+    "url": "https://github.com/armosam/taskmanager/issues"
+  },
+  "homepage": "https://github.com/armosam/taskmanager#readme"
 }
